@@ -15,5 +15,6 @@ s=requests.session()
 s=BeautifulSoup(s.get(play_url,headers=headers).content)
 main=s.find('ul',{'class':'f-hide'})
 
+
 for music in main.find_all('a'):
     print('{}:{}'.format(music.text,music['href']))
