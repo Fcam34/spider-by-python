@@ -28,7 +28,7 @@ def getdata():
             rex1 = re.compile(r"\[[^{}]*\]")
             data1 = rex1.findall(response1)
             ddata1 = ''.join(data1)
-            con1 = json.loads(ddata1)
+            con1 = json.loads(ddata1,strict=False)
 
             for c in con1:
                 arr = c.split(',')
