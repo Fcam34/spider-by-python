@@ -48,22 +48,8 @@ for page in range(1, 3):
         print(res_data['title'],'\t',res_data['name'],res_data['code'],res_data['time'],res_data['line'],res_data['kind'],res_data['author'],
               res_data['where'],res_data['level'], res_data['download'],'\t',res_data['pdfurl'])
 
-        cookie = {'UM_distinctid': '15b8a1182b66cf-0d4203feb9c55b-5e4f2b18-1fa400-15b8a1182b7ab2',
-                  ' safedog-flow-item': 'B4EABC0DB3E9EE166817EE7BD72234FD',
-                  ' ASPSESSIONIDCQDSCRQT': 'EMNFMALAFOHNOCKMFJGOJHPA',
-                  ' ASPSESSIONIDCSDSDSRS': 'OAACFDKAKIDCBMHOJFLBDCCM',
-                  ' ASPSESSIONIDCQBSDSSQ': 'NONAFJLADCBFNKHNCAMBGNHB',
-                  ' ASPSESSIONIDSACSASRT': 'LINGBPLALNAMGIHLKGEDIPJD',
-                  ' ASPSESSIONIDASBRBQRS': 'AEIHKBMANJIFGCIBOCGIBJLP',
-                  ' ASPSESSIONIDSQARATTT': 'CLKJEANAMFNIIMLNINJMBNMN',
-                  ' ASPSESSIONIDAARSATST': 'EENBBCNACOBKOGMJADLOIJPH',
-                  ' ASPSESSIONIDCCRRCSTQ': 'BPOPBJNAAICDPHEGLFAGOEJL',
-                  ' ASPSESSIONIDQAQRDRTR': 'KPFAMNNALHANEJACKAPGLAKM',
-                  ' ASPSESSIONIDCASRBSTR': 'GEDCNCOAGIFMKDJLKGBCHGMM', 'MBemail': 'chengister%40yahoo%2Ecom',
-                  ' MBpwd': 'MTIzNDU2', ' MBname': 'lenhaibo',
-                  'CNZZDATA1752123': 'cnzz_eid%3D1136929673-1492667333-%26ntime%3D1492759380',
-                  ' Hm_lvt_d554f0f6d738d9e505c72769d450253d': '1492670055,1492739203,1492746071,1492746205',
-                  ' Hm_lpvt_d554f0f6d738d9e505c72769d450253d': '1492764249', ' MBpermission': '2', ' c': ''}
+        cookie = {***********
+                 *************} #登陆后的cookie
         r = requests.post(res_data['download'], cookies=cookie)
         #d = requests.get(res_data['download'])
         with open(res_data['title']+'.pdf', "wb") as code:
